@@ -1,0 +1,4 @@
+project_id = "owtjbhlnliikslsbiurq"
+
+[functions.fetch-leetcode-stats]
+verify_jwt = true
