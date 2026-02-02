@@ -1,4 +1,5 @@
 import { Code2, Heart } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,12 +11,31 @@ const Footer = () => {
         </div>
         
         <p className="text-sm text-muted-foreground flex items-center gap-1">
-          Made with <Heart className="w-4 h-4 text-destructive fill-destructive" /> for competitive coders
+          Made for competitive coders
         </p>
         
         <p className="text-xs text-muted-foreground font-mono">
           © {new Date().getFullYear()} All rights reserved
         </p>
+        <p className="text-xs text-muted-foreground font-mono">
+          
+        </p>
+        <p className="text-sm text-muted-foreground flex items-center gap-1">
+        <a
+      href="https://github.com/codebyanshu"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: "#999",
+        transition: "transform 0.2s ease",
+      }}
+      onMouseEnter={(e) => (e.currentTarget.style.transform = "scale(1.1)")}
+      onMouseLeave={(e) => (e.currentTarget.style.transform = "scale(1)")}
+    >
+      <FaGithub size={32} />
+    </a>
+    Made by Anshu
+    </p>
       </div>
     </footer>
   );
